@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <section class="section" id="header">
+      <h1 style="color: red;">This is Header 1</h1>
+      <h2>This is Header 2</h2>
+      <h3>This is Header 3</h3>
+      <h4>This is Header 4</h4>
+      <h5>This is Header 5</h5>
+      <h6>This is Header 6</h6>
+    </section>
+
+    <section class="section" id="Paragraph">
+      <p>
+        This is paragraph.
+      </p>
+    </section>
+
+    <section class="section" id="format">
+      <p>This is a <strong>Bold</strong></p>
+      <p>This is a <em>Emphasize</em></p>
+      <p>This is a <mark>Mark</mark></p>
+      <p>This is a <sub>Subscript</sub></p>
+      <p>This is a <del>Strikeout</del></p>
+    </section>
+
+    <section class="section" id="qoutations">
+      <p>This is a <q>Qoute</q></p>
+      <blockquote>This is a blockqoute. This is a blockqoute.</blockquote>
+      <bdo dir="rtl">This is a bdo.</bdo>
+      <p>This is a <abbr title="World Health Organization">WHO</abbr></p>
+    </section>
+
+    <section class="section" id="comment">
+      <!--<p>This is a comment.</p>-->
+      <p>
+        This is a
+        <!--comment-->
+      </p>
+    </section>
+
+    <section class="section" id="link">
+      <a href="https://www.dack.com">dack</a><br />
+      <a href="https://www.dack.com" target="_blank">dack</a>
+    </section>
+
+    <section class="section" id="media">
+      <img src="image/firefox.jpg" alt="firefox" width="400" />
+      <audio src="audio/audio.mp3"></audio>
+      <video src="video/video.mp4"></video>
+    </section>
+
+    <section class="section" id="table">
+      <table>
+        <caption>
+          My Talbe
+        </caption>
+        <tr>
+          <th colspan="2" rowspan="2">Title</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>10/02/2023</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="sectio" id="list">
+      <ol>
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ol>
+      <ol type="A">
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ol>
+      <ol type="I">
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ol>
+      <ul>
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ul>
+      <ul style="list-style-type: square;">
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ul>
+      <dl>
+        <dt>A</dt>
+        <dd>My name is A.</dd>
+        <dt>B</dt>
+        <dd>My name is B.</dd>
+      </dl>
+    </section>
+
+    <section class="section" id="iframe">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UpwsQrc2Jls"
+      ></iframe>
+    </section>
+
+    <section class="section" id="script">
+      <p id="test-script">This is A</p>
+      <script type="text/javascript">
+        function runAlert() {
+          alert("This is a SCRIPT");
+        }
+      </script>
+    </section>
+
+    <section class="section" id="code">
+      <pre>
+        <code>
+          function test(a,b){
+            return a+b;
+          }
+        </code>
+      </pre>
+      <p><var>x</var>= 1+2</p>
+    </section>
+
+    <section class="section" id="form">
+      <form>
+        text: <input type="text" /><br /><br />
+        text2: <input type="text2" readonly value="README" /><br /><br />
+        number: <input type="number" /><br /><br />
+        password: <input type="password" type="password" /><br /><br />
+        submit: <input type="submit" /><br /><br />
+        textarea:
+        <textarea name="" id="" cols="30" rows="10"></textarea> <br /><br />
+        select:
+        <select name="">
+          <option value="A">Ant</option>
+          <option value="B" selected>Bird</option>
+          <option value="C">Cat</option> </select
+        ><br /><br />
+        Blue: <input type="radio" value="blue" /> Red:
+        <input type="radio" value="red" /> Green: <input type="checkbox" />
+        <input type="text" disabled />
+        <button onclick="" type="button">Click Me</button>
+      </form>
+    </section>
+  </body>
+</html>
