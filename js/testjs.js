@@ -132,5 +132,86 @@ myArr3.forEach((val, ind) => {
 });
 
 
+///////////////////////////////////
+////////if else for////////////////
+///////////////////////////////////
+
+var test1 = [
+    { x: 78, y: 14 },
+    { x: 23, y: 9 },
+    { x: 87, y: 62 },
+    { x: "57", y: 27 }
+];
+
+test1.forEach(val => {
+    if (val.x > 50) console.log("x equal to ", val.x);
+    else if (val.x == 57) console.log("x equal to ", val.x);
+    else console.log("Y equal to ", val.y);
+});
+
+if(test1[0].y > 0) console.log("test1[0].y", test1[0].y);
 
 
+
+//////////////////////////////////////
+/////////////switch///////////////////
+//////////////////////////////////////
+
+var mySwitch = "two";
+switch (mySwitch) {
+    case "one":
+        console.log("mySwitch equal to 1");
+        break;
+    case "two":
+        console.log("mySwitch equal to 2");
+        break;
+    case "three":
+        console.log("mySwitch equal to 3");
+        break;
+}
+
+
+//////////////////////////////////////
+///////////////loop///////////////////
+//////////////////////////////////////
+
+//let x = 1
+for (let x = 1; x < 20; x++) {
+    console.log("X = ", x);
+}
+
+let aaa = 0
+while ( aaa <= 20 ) {
+    console.log("A equal to ", aaa);
+    aaa++
+}
+
+let bbb = 0
+while( bbb <= 50) {
+    console.log("B equal to ", bbb);
+    bbb+=5;
+}
+
+
+//////////////////////////////////////
+///////////////DOM////////////////////
+//////////////////////////////////////
+
+var myDiv = document.getElementById("myDiv");
+myDiv.style.width = "200px";
+myDiv.style.height = "200px";
+myDiv.style.background = "red";
+myDiv.innerHTML = "<h1>Hello World!</h1>";
+
+var elements = document.getElementsByClassName("myClassName");
+// elements[0].innerHTML = "my class name"
+
+for (let e = 0; e < elements.length; e++){
+    elements[e].innerHTML = "my class name " + e;
+}
+
+var myBody = document.getElementsByTagName("body");
+var myh1 = document.createElement("h1")
+var textNode = document.createTextNode("THIS IS A BODY");
+myh1.appendChild(textNode);
+myBody[0].appendChild(myh1);
